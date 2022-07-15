@@ -10,7 +10,7 @@
   <title>E-commerce Website</title>
 </head>
 
-<body>
+<body onload="cart()">
   <section id="header">
     <a href="index.html"><img src="/img/logo.png" class="logo" alt=""></a>
 
@@ -48,17 +48,17 @@
           <td>Subtotal</td>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+      <tbody id="tablee">
+        <!--<tr>
+          <td><a href="#"><i class="fa-solid fa-circle-xmark Remove"></i></a></td>
           <td><img src="/img/products/f1.jpg" alt=""></td>
           <td>Vintage Shirt</td>
           <td>#1500</td>
           <td><input type="number" value="1"></td>
           <td>#1500</td>
-        </tr>
-        <tr>
-          <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+        </tr> -->
+        <!-- <tr>
+          <td><a href="#"><i class="fa-solid fa-circle-xmark Remove"></i></a></td>
           <td><img src="/img/products/f2.jpg" alt=""></td>
           <td>Vintage Shirt</td>
           <td>#1500</td>
@@ -66,13 +66,13 @@
           <td>#1500</td>
         </tr>
         <tr>
-          <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+          <td><a href="#"><i class="fa-solid fa-circle-xmark Remove"></i></a></td>
           <td><img src="/img/products/f3.jpg" alt=""></td>
           <td>Vintage Shirt</td>
           <td>#1500</td>
-          <td><input type="number" value="1"></td>
+          <td><input type="number" value="1" onchange="updateQuantity(this.value)"></td>
           <td>#1500</td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </section>
@@ -87,12 +87,12 @@
     </div>
 
     <div id="subtotal">
-      <h3>Cart total</h3>
+      <h3 >Cart total</h3>
       <table>
 
             <tr>
               <td>cart Subtotal</td>
-              <td>#3000</td>
+              <td id="subTotal">#3000</td>
             </tr>
 
         <tr>
@@ -101,7 +101,7 @@
         </tr>
         <tr>
           <td><strong>Total</strong></td>
-          <td><strong>#3000</strong></td>
+          <td><strong id="total">#3000</strong></td>
         </tr>
       </table>
       <button class="normal">Process To Checkout</button>

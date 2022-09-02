@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/e299ea3047.js"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
   <title>E-commerce Website</title>
 </head>
 
@@ -104,7 +105,7 @@
           <td><strong id="total">#3000</strong></td>
         </tr>
       </table>
-      <button class="normal">Process To Checkout</button>
+      <button id="paymentForm" type="button" class="normal" onclick="payWithPaystack()">Pay Now</button>
     </div>
   </section>
 
@@ -160,7 +161,6 @@
       <p>Olugbenga Timothy 2022</p>
     </div>
   </footer>
-
   <script src="/script.js"></script>
 </body>
 
